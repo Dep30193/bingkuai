@@ -1,0 +1,174 @@
+/*-----------------  default config  -----------------*/
+body{
+    background: rgb(184, 179, 179);
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding:0;
+    height:auto;
+}
+/*----------------  cover page config  --------------------*/
+header{ 
+    background: black;
+    background-image: url('images/cover.jpg');
+    background-size: 100%;
+    background-position: center;
+    background-repeat: repeat;
+    position: relative;
+    padding: 20px;
+    height:400px;
+    text-align: center;
+}
+header a{
+    color:white;
+    text-decoration: none;
+
+}
+header a:hover{
+    color:rgb(127, 171, 228);
+    text-decoration: underline;
+}
+/*-----------------  center logo  -------------------*/
+.logo a{
+    background-image: url('images/b0829.jpg');
+    background-size:100%;
+    border-radius: 50%;
+    background-position: center;
+    background-repeat: no-repeat;text-align:center;
+    position: relative;
+    top: -33px;
+    display: inline-block;    
+    height:110px;
+    width:220px;  /*- - -*/
+    text-indent: -9999px;
+}
+/*---------------  navigation tabs  ---------------------*/
+nav ul{ 
+    padding:20px;
+    font-size: 16pt;  
+}
+nav li{ 
+    display: inline-block;
+    margin:20px;/*- - -*/
+    text-align: left;
+    margin-top: 0;
+}
+nav li:first-child{  
+    margin-left: 15px;
+}
+/*--------------  title  ----------------------*/
+section.title h1{
+    background: rgb(155, 143, 155);
+    color:black;
+    margin: 0;
+    
+    font-size: 24pt;
+
+    text-align: center;
+    display:inline-block;
+    width: 100%;
+    
+}
+/*----------------  figure config  --------------------*/
+.images{
+    padding: 5px;
+    text-align: center;
+    background: rgb(184, 179, 179);
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+.images figure{
+    color:rgb(78, 77, 77);
+    text-align: center;
+    margin: 20px;
+    display: inline-block;
+    border-width: 20px;
+    border-radius: 5%;
+    box-shadow: black 0 0 10px;
+    font-size: 18pt;
+    text-transform: capitalize;
+}
+.images figure img{
+    width:260px;
+    margin-top: 20px;
+    border-radius: 50%;box-shadow: black 0 0 10px;
+    
+}
+/*---------------  footer  --------------------*/
+footer{
+    color:rgb(184, 180, 180);background-color: black;
+    padding:15px; font-size: 11pt;
+    text-align: center;
+}
+/*-----------------  conditonal css config  -------------------*/
+header .mobile{
+    display: none;
+}
+@media screen and (max-width: 986px){
+    header .mobile{
+        display: inline-block;
+    }
+    header .desktop{
+        display: none;
+    }
+    .logo a{
+        height: 120px;
+        width: 180px;
+        
+    }
+    nav li{
+        height: 50px;
+        font-size: 11pt; 
+    }
+    header a{
+        margin-left:-20px;
+        
+    }
+}
+@media screen and (max-width:946px){
+    nav .logo a{
+        position: relative;
+        size: relative;
+        width: 150px;
+    }
+}
+@media screen and (max-width:675px){
+    nav li:first-child{
+        margin-left: 0px
+    }  
+}
+@media screen and (max-width:660px){
+    nav li:first-child{
+        margin-left: -20px;
+    }  
+}
+@media screen and (max-width:640px){
+    nav li{
+        margin-right: 10px;
+    }  
+    .logo a{
+        position: relative;
+        background-size: cover;
+        border-radius:50%;
+     
+        
+    }
+}
+@media screen and (max-width:591px){
+    .logo a{
+        position: relative;
+        background-size: cover;
+        border-radius:100%;
+        top: -110px;
+        left: 210px;    
+    }
+}
+@media screen and (max-width:564px){
+    .logo a{
+          background-size: 60%;
+          top: -98px;
+    }
+}
